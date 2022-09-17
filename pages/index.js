@@ -12,6 +12,7 @@ export default function Home() {
   );
   const { data: nfts, isLoading: isReadingNfts } = useNFTs(contract);
   const { mutate: mintNFT, isLoading: isMintingNFT } = useMintNFT(contract);
+  const contractAddress = "0x4c79a7dFd4b22fcFf10d93a321696a30b5C7FdB5";
 
   return (
     <div>
